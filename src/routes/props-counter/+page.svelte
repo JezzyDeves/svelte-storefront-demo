@@ -17,7 +17,7 @@
 
 	{#if count > 2}
 		<div in:fly={{ duration: 300, x: 10 }}>
-			<LinkButton href="/props-counter">Let's Continue</LinkButton>
+			<LinkButton href="/reactive-statements">Let's Continue</LinkButton>
 		</div>
 	{/if}
 </div>
