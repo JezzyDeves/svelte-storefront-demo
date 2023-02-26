@@ -1,4 +1,6 @@
 <script>
+	import LinkButton from '../components/LinkButton.svelte';
+
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 
@@ -15,10 +17,7 @@
 	>
 		Welcome to Svelte + SvelteKit 👋
 	</h1>
-	<a
-		href="/simple-counter"
-		in:fade={{ duration: 500, delay: 2000 }}
-		class="w-48 rounded-md bg-sky-800 p-3 text-center font-bold text-sky-200 transition-colors duration-300 hover:bg-sky-900"
-		>Let's Get Started!</a
-	>
+	<div in:fade={{ duration: 500, delay: 2000 }}>
+		<LinkButton href="/simple-counter">Let's Get Started</LinkButton>
+	</div>
 {/if}
